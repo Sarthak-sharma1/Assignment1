@@ -8,13 +8,12 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class example13 {
     public static void main(String[] args) {
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
-        /*
-         Person person = context.getBean(Person.class);
-         Vehicle vehicle = context.getBean(Vehicle.class);
+     /*    Person person = context.getBean(Person.class);
+         Vehicle vehicle = context.getBean( Vehicle.class);
          person.getVehicle().getVehicleServices().playMusic();
          System.out.println( vehicle.getName());
-         vehicle.getVehicleServices().rotate();
-        */
+         vehicle.getVehicleServices().rotate();*/
+
 
         String [] persons = context.getBeanNamesForType(Person.class);
         Person person = context.getBean(Person.class);
